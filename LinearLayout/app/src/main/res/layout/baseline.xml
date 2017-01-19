@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+android:orientation="horizontal"
+    android:baselineAligned="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="org.androidtown.linearlayout.MainActivity">
+
+    <TextView
+    android:id="@+id/button01"
+    android:gravity="right|bottom"
+    android:textColor="#ffff0000"
+    android:textSize="32dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="큰글씨" />
+    <TextView
+        android:id="@+id/button02"
+        android:gravity="right|bottom"
+        android:textColor="#ff00ff00"
+        android:textSize="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="중간글씨" />
+    <Button
+        android:id="@+id/button03"
+        android:gravity="right|bottom"
+        android:textColor="#ff0000ff"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작은글씨" />
+
+</LinearLayout>
