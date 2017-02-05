@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.androidtown.mission7.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        >
+        <Button
+            android:id="@+id/monthPrevious"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backward"
+            android:gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/monthText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="MonthView"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            />
+        <Button
+            android:id="@+id/monthNext"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/forward"
+            android:gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <org.androidtown.mission7.CalendarMonthView
+        android:id="@+id/monthView"
+        android:layout_width="match_parent"
+        android:layout_height="418dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:text="일정"
+            android:textSize="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="183dp"
+            android:layout_height="55dp"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:text="저장"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_marginTop="-20dp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
