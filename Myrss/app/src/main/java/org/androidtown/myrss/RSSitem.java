@@ -1,39 +1,34 @@
 package org.androidtown.myrss;
 
+import android.graphics.drawable.Drawable;
+
 /**
  * Created by InKyung on 2017-02-06.
  */
 
 public class RSSitem {
-    String title, link, category, author,pubDate,description ;
+    String title, link, description, image, dcDate ;
 
     public RSSitem(){}
-    public RSSitem(String title, String link,String category,String author,String pubDate,String description){
+    public RSSitem(String title, String link,String image,String dcDate,String description){
 
         this.title=title ;
         this.link=link ;
-        this.category=category ;
-        this.author=author ;
-        this.pubDate=pubDate ;
+        this.image=image ;
+        this.dcDate=dcDate ;
         this.description=description ;
     }
 
-    public String getCategory() {
-        return category;
+    public String getDcDate() {
+        return dcDate;
     }
-
-    public void setCategory(String category) {
-        this.category = category;
+    private Drawable mIcon;
+    public void setDcDate(String dcDate) {
+        this.dcDate = dcDate;
     }
-
-    public String getAuthor() {
-        return author;
+    public Drawable getIcon() {
+        return mIcon;
     }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
     public String getDescription() {
         return description;
     }
@@ -42,12 +37,12 @@ public class RSSitem {
         this.description = description;
     }
 
-    public String getPubDate() {
-        return pubDate;
+    public String getImage() {
+        return image;
     }
 
-    public void setPubDate(String pubDate) {
-        this.pubDate = pubDate;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getLink() {

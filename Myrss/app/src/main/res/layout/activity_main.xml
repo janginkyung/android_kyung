@@ -20,7 +20,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
 
-        android:text="http://www.naver.com/"
+        android:text="http://www.chosun.com/site/data/rss/ent.xml"
         />
 
     <Button
