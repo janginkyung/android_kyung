@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
+        map=googleMap ;
     }
 
     @Override
@@ -89,8 +90,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         private void showCurrentmap(Double latitude, Double longtitude){
             //위치가 변화할때 지도에 표시하는 것
             LatLng curpoint=new LatLng(latitude,longtitude) ;
-            //map.animateCamera(CameraUpdateFactory.newLatingZoom(curpoint, 15) ;
-            //map.setMaptype() 위성지도 등등 지도의 유형을 지정할 수 있다.
+            map.animateCamera(CameraUpdateFactory.newLatLngZoom(curpoint, 15) );
+            map.setMapType(GoogleMap.MAP_TYPE_NORMAL);// 위성지도 등등 지도의 유형을 지정할 수 있다.
 
         }
         @Override
